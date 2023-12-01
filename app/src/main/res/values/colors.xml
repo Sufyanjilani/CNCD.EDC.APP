@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryblue">#03A9F4</color>
+    <color name="secondaryblue">#2175F3</color>
+    <color name="textcolor">#0C0B0B</color>
+    <color name="backgroundColorpanel">#EFF2FE</color>
+    <color name="textdashboardMenu">#9F9E9E</color>
+    <color name="dashcardcolor">#03A9F4</color>
+    <color name="btncolor">#FFFFFF</color>
+    <color name="farmerprofilecardcolor">#FFFFFF</color>
+    <color name="farmerprofilecardpanel1color">#FFFFFF</color>
+    <color name="loginpanelcolor">#71C9F1</color>
+    <color name="seperatorcolor">@android:color/darker_gray</color>
+    <color name="wholecolor">#FFFF</color>
+    <color name="lightblue">#59A0EE</color>
+    <color name="btncolortext">#FFFFFF</color>
+    <color name="grey">#756C6C</color>
+    <color name="green">#04D60B</color>
+    <color name="bluelight">#035498</color>
+    <color name="Black30">#4D111111</color>
+
+
+    <color name="purple_200">#86C5FC</color>
+    <color name="purple_500">#006BEE</color>
+    <color name="purple_700">#0057B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black_light">#393838</color>
+
+    <color name="colorPrimary">#006BEE</color>
+    <color name="colorPrimaryDark">#0057B3</color>
+    <color name="background_white_gray">#F3F5F8</color>
+
+
+    <color name="Black80">#CC111111</color>
+    <color name="Black65">#A6111111</color>
+    <color name="Black50">#80111111</color>
+    <color name="Black10">#1A111111</color>
+
+
+    <color name="Gray">#232323</color>
+    <color name="Black">#111111</color>
+    <color name="BlackLighter">#CD191818</color>
+
+    <color name="gray">#453C3C3C</color>
+    <color name="gray50">#803C3C3C</color>
+    <color name="gray20">#333C3C3C</color>
+    <color name="gray10">#1A3C3C3C</color>
+    <color name="grayTransparent">#C9BAB8B8</color>#C9292929
+    <color name="grayMiddle50">#0D000000</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="WhiteLowOpc90">#E6FFFFFF</color>
+    <color name="WhiteLowOpc70">#B3FFFFFF</color>
+    <color name="WhiteLowOpc50">#80FFFFFF</color>
+    <color name="WhiteLowOpc30">#4DFFFFFF</color>
+
+    <color name="Transparent">#00FFFFFF</color>
+
+
+    <color name="test">#F3866C</color>
+
+
+    //color for gradients
+
+
+    <color name="brown">#785549</color>
+    <color name="brownLighter">#8F7267</color>
+
+    <color name="red">#f2453d</color>
+    <color name="redsharp">#E11309</color>
+    <color name="redLighter">#F06A63</color>
+
+    <color name="orangeDark">#fc5830</color>
+    <color name="orangeDarkLighter">#FF7D5E</color>
+
+    <color name="orangeYellow">#fd9727</color>
+    <color name="orangeYellowLighter">#FFAE55</color>
+
+    <color name="yellow">#fdc02f</color>
+    <color name="yellowdarker">#ECA705</color>
+    <color name="yellowLighter">#FFD674</color>
+
+    <color name="greenYellow">#cddb49</color>
+    <color name="greenYellowLighter">#E1F075</color>
+
+    <color name="greenDarker">#3B8A3E</color>
+    <color name="greenLighter">#89C78C</color>
+
+    <color name="skyblue">#2c98f0</color>
+    <color name="skybluedark">#1C7ECF</color>
+    <color name="skyblueLight">#80BAFA</color>
+    <color name="skyblueLightt">#65ACFA</color>
+
+    <color name="bluePure">#4054b2</color>
+    <color name="bluePureLighter">#6B7BC2</color>
+
+    <color name="purple">#9a30ae</color>
+    <color name="purplesharp">#BA07DC</color>
+    <color name="purpleLighter">#BC5DCC</color>
+
+    <color name="pink">#e72564</color>
+    <color name="pinkLighter">#F75F91</color>
+
+    <color name="blue">#014277</color>
+    <color name="bluelighter">#026AC1</color>
+
+
+    <color name="cyan">#009691</color>
+    <color name="cyanDarker">#00706C</color>
+
+
+
+    <!-- bask colors -->
+    <color name="purple_20">#FFBB86FC</color>
+    <color name="purple_50">#FF6200EE</color>
+    <color name="purple_70">#FF3700B3</color>
+    <color name="teal_20">#FF03DAC5</color>
+    <color name="teal_70">#FF018786</color>
+    <color name="redpure">#D60E0E</color>
+    <color name="colorAccent">#57E1D1</color>
+    <color name="colorBtmNavInactive">#BDC0D3</color>
+    <color name="colorBtmNavBg">#ffffff</color>
+    <color name="colorBg">#f7fafd</color>
+    <color name="colorBtmNavStroke">#F0F0F0</color>
+    <color name="colorBlankDummy">#00000000</color>
+    <color name="colorError">#ff3b30</color>
+    <color name="colorSuccess">#61A117</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="opaque_white_80">#0DFFFFFF</color>
+    <color name="light_violet">#7077D8</color>
+
+
+    <color name="primary_background">#FAFAFF</color>
+    <color name="primary_text">#161D50</color>
+    <color name="discount_background">#7077D8</color>
+
+
+
+    <!--Material InputText Field-->
+    <color name="colorETPrimary">#7077D8</color>
+    <color name="colorETHints">#161D50</color>
+    <color name="colorETError">#DB2F24</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#BDC0D3</color>
+    <color name="colorETDefault">#BDC0D3</color>
+
+    <color name="colorDullTexts">#A2A6BD</color>
+    <color name="colorDullTextsHighlight">#676C8F</color>
+    <color name="colorFcltyDetailIndicator">#57E1D1</color>
+    <color name="transparent">#00000000</color>
+    <color name="et_shape_color">#f7f8fc</color>
+    <color name="et_shape_color1">#010515</color>
+    <color name="colorHCSeparator">#e8eaf5</color>
+
+    <color name="color_light_grey">#676C8F</color>
+    <color name="tab_layout_colour">#57E1D1</color>
+    <color name="darkest_blue">#161D50</color>
+    <color name="main_text_medium">#A2A6BD</color>
+
+
+    <color name="rating_color">#F6CA51</color>
+    <color name="progressbar_background">#BDC0D3</color>
+    <color name="panel_color">#FFFFFFFF</color>
+</resources>

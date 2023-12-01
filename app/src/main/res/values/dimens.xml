@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_btm_nav_roundness">25dp</dimen>
+    <dimen name="btm_nav_text_size">15sp</dimen>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="snackbar_error_headerfont">18sp</dimen>
+    <dimen name="snackbar_error_subfont">14sp</dimen>
+    <dimen name="sizeEditTextsInput">18sp</dimen>
+
+    <dimen name="material_fields_corner_radius">10dp</dimen>
+    <dimen name="tilTopnBttmMargins">5dp</dimen>
+    <dimen name="material_fields_drawable_padding">16dp</dimen>
+    <dimen name="tilStartnEndMargins">15dp</dimen>
+
+    <dimen name="font_26">26sp</dimen>
+    <dimen name="font_33">33sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="good_marginStartnEnd">15dp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="dragPanelParallaxOffset">0dp</dimen>
+    <dimen name="dragPanelCornerRadius">25dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_normal">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_x_large">40dp</dimen>
+    <dimen name="bottom_nav_height">58dp</dimen>
+    <dimen name="above_bottom_nav_margin">74dp</dimen>
+    <dimen name="frag_hc_items_min_height">55dp</dimen>
+    <dimen name="standard_55">65dp</dimen>
+    <dimen name="standard_105">125dp</dimen>
+    <dimen name="standard_155">185dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>
