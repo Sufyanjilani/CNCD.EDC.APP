@@ -20,7 +20,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 
-import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHlper;
+import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHelper;
 import com.example.cncdhumanedcandroid.Session.SessionManager;
 import com.example.cncdhumanedcandroid.Utils.InternetUtils;
 import com.example.cncdhumanedcandroid.ViewModels.LoginViewModel;
@@ -40,7 +40,7 @@ public class ActivityLogin extends AppCompatActivity {
     LoginViewModel loginViewModel;
     CustomProgressDialog customProgressDialog;
     FusedLocationProviderClient locationProviderClient;
-    RealmDatabaseHlper realmDatabaseHlper;
+    RealmDatabaseHelper realmDatabaseHlper;
     String appVersion = "";
 
     String lat,lon = "0.0";
@@ -55,7 +55,7 @@ public class ActivityLogin extends AppCompatActivity {
         customProgressDialog = new CustomProgressDialog(this);
         setUpLocation();
         getcurrentlocationEnd();
-        realmDatabaseHlper = new RealmDatabaseHlper();
+        realmDatabaseHlper = new RealmDatabaseHelper();
         realmDatabaseHlper.InitializeRealm(this);
 
         loginViewModel.isloginsucces.observe(this, new Observer<String>() {

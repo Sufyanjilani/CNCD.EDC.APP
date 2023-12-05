@@ -8,7 +8,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.cncdhumanedcandroid.Network.RetrofitClientSurvey;
-import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHlper;
+import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHelper;
 import com.example.cncdhumanedcandroid.Session.SessionManager;
 import com.google.gson.JsonObject;
 
@@ -18,7 +18,7 @@ import retrofit2.Response;
 
 public class DashboardViewModel extends AndroidViewModel {
 
-    RealmDatabaseHlper realDBhelper;
+    RealmDatabaseHelper realDBhelper;
     SessionManager sessionManager;
 
     MutableLiveData<String> _isLogoutSuccess = new MutableLiveData<>();
@@ -26,7 +26,7 @@ public class DashboardViewModel extends AndroidViewModel {
 
     public DashboardViewModel(@NonNull Application application) {
         super(application);
-        realDBhelper  = new RealmDatabaseHlper();
+        realDBhelper  = new RealmDatabaseHelper();
         sessionManager = new SessionManager(getApplication().getApplicationContext());
     }
 

@@ -8,7 +8,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.cncdhumanedcandroid.Network.RetrofitClientSurvey;
-import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHlper;
+import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHelper;
 import com.example.cncdhumanedcandroid.Session.SessionManager;
 import com.google.gson.JsonObject;
 
@@ -23,12 +23,12 @@ public class LoginViewModel extends AndroidViewModel {
 
     SessionManager sessionManager;
 
-    RealmDatabaseHlper realmDatabaseHlper;
+    RealmDatabaseHelper realmDatabaseHelper;
 
     public LoginViewModel(@NonNull Application application) {
         super(application);
         sessionManager = new SessionManager(getApplication().getApplicationContext());
-        realmDatabaseHlper = new RealmDatabaseHlper();
+        realmDatabaseHelper = new RealmDatabaseHelper();
     }
 
     public void Login(String username, String password, String appversion, String locationcoordinates) {
@@ -63,7 +63,7 @@ public class LoginViewModel extends AndroidViewModel {
                         JsonObject formconfig = config.get("formConfig").getAsJsonObject();
 
 
-                        realmDatabaseHlper.InsertFormEntitiesConfig(formconfig.toString());
+                        realmDatabaseHelper.InsertFormEntitiesConfig(formconfig.toString());
 
 
 

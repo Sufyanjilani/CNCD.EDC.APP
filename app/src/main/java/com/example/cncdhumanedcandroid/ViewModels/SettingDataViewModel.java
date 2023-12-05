@@ -10,7 +10,7 @@ import androidx.lifecycle.MutableLiveData;
 
 
 import com.example.cncdhumanedcandroid.Network.RetrofitClientSurvey;
-import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHlper;
+import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHelper;
 import com.example.cncdhumanedcandroid.Utils.LinkExtractor;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -29,7 +29,7 @@ import retrofit2.Response;
 
 public class SettingDataViewModel extends AndroidViewModel {
 
-    RealmDatabaseHlper realDBhelper;
+    RealmDatabaseHelper realDBhelper;
 
     public MutableLiveData<String> surveyformsResponse = new MutableLiveData<>();
 
@@ -37,7 +37,7 @@ public class SettingDataViewModel extends AndroidViewModel {
 
     public SettingDataViewModel(@NonNull Application application) {
         super(application);
-        realDBhelper = new RealmDatabaseHlper();
+        realDBhelper = new RealmDatabaseHelper();
     }
 
     public void getSurveyForm() {

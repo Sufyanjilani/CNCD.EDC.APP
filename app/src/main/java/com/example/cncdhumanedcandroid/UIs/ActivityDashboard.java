@@ -12,7 +12,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.cncdhumanedcandroid.Dialogs.AdFormTypeDialog;
-import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHlper;
+import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHelper;
 import com.example.cncdhumanedcandroid.Session.SessionManager;
 import com.example.cncdhumanedcandroid.ViewModels.DashboardViewModel;
 import com.example.cncdhumanedcandroid.databinding.ActivityDashboardBinding;
@@ -23,7 +23,7 @@ public class ActivityDashboard extends AppCompatActivity {
     ActivityDashboardBinding activityDashboardBinding;
     DashboardViewModel dashboardViewModel;
     CustomProgressDialog customProgressDialog;
-    RealmDatabaseHlper realmDatabaseHlper;
+    RealmDatabaseHelper realmDatabaseHelper;
     SessionManager sessionManager;
 
     @Override
@@ -37,8 +37,8 @@ public class ActivityDashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         activityDashboardBinding = ActivityDashboardBinding.inflate(getLayoutInflater());
         setContentView(activityDashboardBinding.getRoot());
-        realmDatabaseHlper = new RealmDatabaseHlper();
-        realmDatabaseHlper.InitializeRealm(this);
+        realmDatabaseHelper = new RealmDatabaseHelper();
+        realmDatabaseHelper.InitializeRealm(this);
         sessionManager = new SessionManager(this);
         customProgressDialog = new CustomProgressDialog(this);
         dashboardViewModel = new ViewModelProvider(this).get(DashboardViewModel.class);

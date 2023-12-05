@@ -15,7 +15,7 @@ import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 
-public class RealmDatabaseHlper {
+public class RealmDatabaseHelper {
 
     Realm realm;
 
@@ -24,7 +24,7 @@ public class RealmDatabaseHlper {
     SessionManager sessionManager;
 
 
-    public RealmDatabaseHlper(Context ctx) {
+    public RealmDatabaseHelper(Context ctx) {
 
         this.context = ctx;
 
@@ -32,7 +32,7 @@ public class RealmDatabaseHlper {
     }
 
 
-    public RealmDatabaseHlper() {
+    public RealmDatabaseHelper() {
 
     }
 

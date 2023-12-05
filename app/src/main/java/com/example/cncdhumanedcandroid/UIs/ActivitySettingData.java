@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHlper;
+import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHelper;
 import com.example.cncdhumanedcandroid.Session.SessionManager;
 import com.example.cncdhumanedcandroid.ViewModels.SettingDataViewModel;
 import com.example.cncdhumanedcandroid.databinding.ActivitySettingDataBinding;
@@ -19,7 +19,7 @@ public class ActivitySettingData extends AppCompatActivity {
     ActivitySettingDataBinding activitySettingDataBinding;
 
     SettingDataViewModel settingDataViewModel;
-    RealmDatabaseHlper realmDatabaseHlper;
+    RealmDatabaseHelper realmDatabaseHelper;
 
     SessionManager sessionManager;
 
@@ -29,8 +29,8 @@ public class ActivitySettingData extends AppCompatActivity {
         activitySettingDataBinding = ActivitySettingDataBinding.inflate(getLayoutInflater());
         setContentView(activitySettingDataBinding.getRoot());
         settingDataViewModel = new ViewModelProvider(this).get(SettingDataViewModel.class);
-        realmDatabaseHlper = new RealmDatabaseHlper();
-        realmDatabaseHlper.InitializeRealm(this);
+        realmDatabaseHelper = new RealmDatabaseHelper();
+        realmDatabaseHelper.InitializeRealm(this);
         sessionManager = new SessionManager(this);
 
         new Handler().postDelayed(new Runnable() {

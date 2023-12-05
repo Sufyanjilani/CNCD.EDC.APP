@@ -35,7 +35,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHlper;
+import com.example.cncdhumanedcandroid.OfflineDb.Helper.RealmDatabaseHelper;
 import com.example.cncdhumanedcandroid.Session.SessionManager;
 import com.example.cncdhumanedcandroid.Utils.CustomDialogHelper;
 import com.example.cncdhumanedcandroid.Utils.WebViewJavascriptCode;
@@ -78,7 +78,7 @@ public class ActivityWebView extends AppCompatActivity {
     private String mCM;
     private ValueCallback<Uri> mUM;
     private ValueCallback<Uri[]> mUMA;
-    RealmDatabaseHlper realmDatabaseHlper;
+    RealmDatabaseHelper realmDatabaseHelper;
 
     private String formName;
 
@@ -128,8 +128,8 @@ public class ActivityWebView extends AppCompatActivity {
         setContentView(activityWebViewBinding.getRoot());
         sessionManager = new SessionManager(this);
         customDialogHelper = new CustomDialogHelper(ActivityWebView.this);
-        realmDatabaseHlper = new RealmDatabaseHlper(this);
-        realmDatabaseHlper.InitializeRealm(this);
+        realmDatabaseHelper = new RealmDatabaseHelper(this);
+        realmDatabaseHelper.InitializeRealm(this);
         setUpLocation();
         LoadWebViewWithDifferentSettings();
         LocationUpdates();
@@ -172,7 +172,7 @@ public class ActivityWebView extends AppCompatActivity {
     }
 
     public String getSurveyReadOnly(String id) {
-        String formjson = realmDatabaseHlper.readDataSurvey(id);
+        String formjson = realmDatabaseHelper.readDataSurvey(id);
         String json = formjson;
         int charactersToRemove = 1;
 
@@ -191,7 +191,7 @@ public class ActivityWebView extends AppCompatActivity {
     }
 
     public String getSurveyFormData(String id) {
-        String formjson = realmDatabaseHlper.readDataSurvey(id);
+        String formjson = realmDatabaseHelper.readDataSurvey(id);
 
         Log.d("constants.info" + "function", formjson);
 //        Log.d(constants.Tag, entityId);
@@ -462,7 +462,7 @@ public class ActivityWebView extends AppCompatActivity {
     }
 
     public String getEntities() {
-        return realmDatabaseHlper.getFormConfig();
+        return realmDatabaseHelper.getFormConfig();
     }
 
 
@@ -680,7 +680,7 @@ public class ActivityWebView extends AppCompatActivity {
 
     public void createCompletedJson() {
 
-        ArrayList<String> arrayList = realmDatabaseHlper.readCompletedForm();
+        ArrayList<String> arrayList = realmDatabaseHelper.readCompletedForm();
 
         if (arrayList.size() != 0) {
             Gson gson = new Gson();
@@ -771,7 +771,7 @@ public class ActivityWebView extends AppCompatActivity {
                 Log.d("package", nameNotFoundException.getMessage().toString());
             }
 
-            realmDatabaseHlper.InsertCompletedForm(Integer.parseInt(formId), form_start_time, form_end_time, start_latitude, start_longitude, end_latitude, end_longitude, appversion, data);
+            realmDatabaseHelper.InsertCompletedForm(Integer.parseInt(formId), form_start_time, form_end_time, start_latitude, start_longitude, end_latitude, end_longitude, appversion, data);
             Log.d("constants.info", formdata);
             Log.d("constants.info", appversion);
             Log.d("constants.info", formId.toString());
